@@ -1,0 +1,16 @@
+// Layout
+
+section {
+  display: flex;
+  padding: 50px 0px;
+  background: rgb(245, 249, 249);
+  border-bottom: 1px solid $section-border;
+}
+
+.section-inverse {
+    display: flex;
+    padding: 50px 0px;
+    background: #222;
+    border-bottom: 1px solid $section-border;
+    color: #fff;
+}

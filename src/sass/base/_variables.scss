@@ -1,0 +1,109 @@
+/* Containers */
+// I felt it best practice to have the breakpoints at an even number and to put them
+// in a variable for easy access
+$x-small: 600px;
+$small: 800px;
+$medium: 1000px;
+$large: 1200px;
+$full: 100%;
+
+/* Colors */
+
+$primary: #70F8BA;
+$secondary: #6D8A96;
+$alt: #4A4E69;
+$background: #ecf0f1;
+$link-color: $primary;
+$link-hover: lighten($link-color, 10%); //<-- Neat SASS trick
+$highlight: #ffeea8;
+$bq-border: 5px solid #cdcdcd;
+$white: #fff; //Common color
+$section-border: #bdc3c7;
+
+// Breakpoints
+$mobile: $x-small;
+$desktop: $medium;
+
+// Body font
+$font-size: 1rem;
+$body-font-size: 1rem;
+$font-style: normal;
+$font-variant: normal;
+$font-weight: normal;
+$font-color: #404040;
+$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+$line-height: 1.5;
+
+// Headings
+$heading-font-color: $font-color; //used so it is easy to customize headers
+$heading-weight: 500;
+$heading-font-family: $font-family; //will replace with google fonts or whatever font
+$heading-line-height: 1.2;
+
+$h1: 2.5rem;
+$h2: 2rem;
+$h3: 1.75rem;
+$h4: 1.5rem;
+$h5: 1.25rem;
+
+/* Padding */
+
+$padding: 2rem;
+$margins: 1.5rem;
+$content-padding: 60px 0;
+$content-padding-mobile: 30px 0;
+
+/* Borders */
+
+$border-width: 2px;
+$border-style: solid;
+$border-color: $secondary;
+$border-radius: 5px;
+$borders: $border-width $border-style $border-color;
+$bq-border: 8px solid #cdcdcd;
+
+/* Buttons */
+
+$button-background: $primary;
+$button-hover: darken($button-background, 25%);
+$button-color: $white;
+$button-font-weight: 500;
+$button-font-family: Helvetica Neue, Helvetica, Arial, sans-serif; //used standard font for buttons
+$button-font-size: 1rem;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: $button-background;
+$button-border-radius: $border-radius;
+$button-text-transform: normal;
+
+// Secondary Buttons
+$secondary-button-background: transparent;
+$secondary-hover: $primary;
+$secondary-color: $primary;
+$secondary-border-color: $primary;
+$secondary-button-color-hover: $primary;
+
+// Round Buttons
+$round-buttons: 40px;
+
+/* Forms */
+
+$forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$input-background: transparent;
+$placeholder: darken($secondary, 20%);
+$form-border: 1px solid #cdcdcd;
+$form-border-hover: 1px solid darken(#cdcdcd, 20%);
+$form-border-focus: 1px solid $link-color;
+
+/* Tables */
+
+$stripes: #f0f0f0;
+$caption: darken($secondary, 20%);
+
+/* Code */
+
+$code-color: $font-color;
+$code-family: "Lucida Console", Monaco, monospace;
+$code-background: #f4f4f4;
+$code-borders: $borders;

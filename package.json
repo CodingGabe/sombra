@@ -1,0 +1,33 @@
+{
+  "name": "ashton",
+  "version": "2.0.0",
+  "description": "version 2 of my css framework using gulp and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingGabe/Ash.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "frontend",
+    "framework",
+    "css"
+  ],
+  "author": "Gabe Amaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodingGabe/Ash/issues"
+  },
+  "homepage": "https://github.com/CodingGabe/Ash#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  }
+}

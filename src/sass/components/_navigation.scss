@@ -1,0 +1,225 @@
+/*.navbar styles: default, static, fixed*/
+.navbar-default{
+    width: 100%;
+    position: relative;
+    height: 10px;
+}
+
+.navbar-static {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-fixed {
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+/*general navbar specs*/
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    padding: 0px;
+    padding-left: 28px;
+}
+
+.navbar-menu {
+    height: 72px;
+    overflow: hidden;
+    transition: height .6s ease;
+    width:100%;
+}
+
+.navbar-navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left:0;
+    margin: 0px;
+}
+
+.navbar-menu a,
+.navbar-item a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+    color: inherit;;
+}
+
+.navbar-menu a:hover,
+.navbar-item a:hover {
+    text-decoration: none;
+    color: $primary;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navbar-item a {
+    padding: 23px;
+    display: block;
+    letter-spacing: 2px;
+}
+
+
+/*navbar-menu-transparent*/
+
+.navbar-menu-transparent {
+    color: $alt;
+    background-color: transparent;
+    border-bottom: 1px solid #2A2D34;
+}
+
+.navbar-menu-transparent .navbar-item:nth-child(2) {
+    border-top: 1px solid #2A2D34;
+}
+
+
+.navbar-menu-transparent .navbar-hamburger span::after,
+.navbar-menu-transparent .navbar-hamburger span::before,
+.navbar-menu-transparent .navbar-hamburger span {
+    background-color: $background;
+}
+
+/* navbar-menu-alt */
+
+.navbar-menu-alt {
+  color: $white;
+  background-color: $alt;
+}
+
+.navbar-menu-alt .navbar-hamburger span::after,
+.navbar-menu-alt .navbar-hamburger span::before,
+.navbar-menu-alt .navbar-hamburger span {
+    background-color: $background;
+}
+
+/* navbar-menu-primary */
+
+.navbar-menu-prime {
+  color: $white;
+  background-color: $primary;
+}
+
+.navbar-menu-prime .navbar-hamburger span::after,
+.navbar-menu-prime .navbar-hamburger span::before,
+.navbar-menu-prime .navbar-hamburger span {
+    background-color: $background;
+}
+
+/* navbar-menu-secondary */
+
+.navbar-menu-secondary {
+  color: $white;
+  background-color: $secondary;
+}
+
+.navbar-menu-secondary .navbar-hamburger span::after,
+.navbar-menu-secondary .navbar-hamburger span::before,
+.navbar-menu-secondary .navbar-hamburger span {
+    background-color: $background;
+}
+
+/*general hamburger specs*/
+
+.navbar-hamburger {
+    padding: 26px;
+    position: relative;
+}
+
+.navbar-hamburger span::before {
+    margin-top: -8px;
+}
+
+.navbar-hamburger span::after {
+    margin-top: 8px;
+}
+
+.navbar-hamburger span::after,
+.navbar-hamburger span::before {
+    content: '';
+    position: absolute;
+}
+.navbar-hamburger span::after,
+.navbar-hamburger span::before,
+.navbar-hamburger span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    transition: .5s ease-out;
+}
+
+#navbar-checkbox {
+    display: none;
+}
+
+#navbar-checkbox:checked ~ .navbar-menu {
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .5s ease-out;
+}
+
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger span {
+    background-color: transparent;
+}
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger span::before,
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger span::after {
+    margin-top: 0px;
+}
+
+
+/*hamburger-themes: spin, doublespin*/
+    /*hamburger-spin*/
+
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger-spin span::before {
+    transform: rotate(45deg);
+}
+
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger-spin span::after {
+    transform: rotate(-45deg);
+}
+
+    /*hamburger-spin*/
+
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger-doublespin span::before {
+    transform: rotate(225deg);
+}
+
+#navbar-checkbox:checked ~ .navbar-menu li .navbar-hamburger-doublespin span::after {
+    transform: rotate(-225deg);
+}
+
+
+/*behavior under screenwidth 768*/
+
+@media screen and (min-width: 768px) {
+    .navbar-navigation {
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+    .navbar-header {
+        margin-right: auto;
+    }
+    .navbar-hamburger {
+        display: none;
+    }
+
+    .navbar-menu .navbar-item:nth-child(2) {
+        border-top: 0px;
+    }
+}
