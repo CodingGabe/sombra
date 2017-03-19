@@ -46,25 +46,62 @@
             browser-consistent styling for buttons, forms, tables, lists, and typography,
             and a responsive grid system for templating.</p>
         </div>
+        <!-- GitHub Buttons -->
+        <a class="github-button" href="https://github.com/CodingGabe/sombra/archive/master.zip" aria-label="Download CodingGabe/sombra on GitHub">Download</a>
+        <a class="github-button" href="https://github.com/CodingGabe/sombra" data-icon="octicon-star" data-count-href="/CodingGabe/sombra/stargazers" data-count-api="/repos/CodingGabe/sombra#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star CodingGabe/sombra on GitHub">Star</a>
     </div>
   </header>
 
-  <section class="sombra">
+  <section class="sombra content">
     <div class="flex-container">
-      <main class="margin" id="main">
-        <div class="main-container">
-          <section id="getting-started">
-            <article>
-              <h2>HTML Sombra template</h2>
-            </article>
-          </section>
-        </div>
-      </main>
+      <div class="medium-container">
+        <section id="getting-started">
+          <article>
+            <h2>HTML Starting point</h2>
+            <p>Begin with a basic template that:</p>
+            <ul>
+              <li>Sets up the default HTML language</li>
+              <li>Defines the viewport for responsiveness</li>
+              <li>Includes jQuery for your DOM manipulation needs</li>
+              <li>Includes the Sombra CSS file, favicon, and optional JS file</li>
+            </ul>
+            <pre class="language-html">
+              <code class="language-html">
+                <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+  &lt;title&gt;&lt;/title&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.min.css&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;img/favicon.ico&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+              </code>
+            </pre>
+          </article>
+        </section>
+      </div>
     </div>
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- GitHub buttons script -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </body>
 
 </html>
