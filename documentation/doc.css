@@ -30,6 +30,10 @@
   .content {
     width: 100%;
   }
+  .example {
+    border: 1px solid #4A4E69;
+    padding: 10px;
+  }
 }
 
 .doc-section {
@@ -47,4 +51,8 @@
 
 .content {
   width: 100%;
+}
+.example {
+  border: 1px solid #4A4E69;
+  padding: 10px;
 }

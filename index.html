@@ -52,47 +52,142 @@
     </div>
   </header>
 
+  <!-- HTML and intro -->
   <section class="sombra content">
-    <div class="flex-container">
-      <div class="medium-container">
-        <section id="getting-started">
-          <article>
-            <h2>HTML Starting point</h2>
-            <p>Begin with a basic template that:</p>
-            <ul>
-              <li>Sets up the default HTML language</li>
-              <li>Defines the viewport for responsiveness</li>
-              <li>Includes jQuery for your DOM manipulation needs</li>
-              <li>Includes the Sombra CSS file, favicon, and optional JS file</li>
-            </ul>
-            <pre class="language-html">
-              <code class="language-html">
-                <pre><code class="language-html">&lt;!doctype html&gt;
+    <div class="container">
+      <h2>HTML Starting point</h2>
+      <p>Begin with a basic template that:</p>
+      <ul>
+        <li>Sets up the default HTML language</li>
+        <li>Defines the viewport for responsiveness</li>
+        <li>Includes jQuery for your DOM manipulation needs</li>
+        <li>Includes the Sombra CSS file, favicon, and optional JS file</li>
+      </ul>
+      <pre class="language-html">
+        <code class="language-html">
+          <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
 &lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 
-  &lt;title&gt;&lt;/title&gt;
+&lt;title&gt;&lt;/title&gt;
 
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.min.css&quot;&gt;
-  &lt;link rel=&quot;icon&quot; href=&quot;img/favicon.ico&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.min.css&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;img/favicon.ico&quot;&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
 
-  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;</code></pre>
-              </code>
-            </pre>
-          </article>
-        </section>
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <!--  Containers -->
+  <section class="content containers">
+    <div class="small-container">
+      <h2>Containers</h2>
+      <p>There are three container sizes for content that are centered with left and right padding. Content without a container will span the width of the viewport.</p>
+      <pre><code class="language-html">  &lt;div class=&quot;small-container&quot;&gt;Small&lt;/div&gt;
+  &lt;div class=&quot;medium-container&quot;&gt;Medium&lt;/div&gt;
+  &lt;div class=&quot;container&quot;&gt;Large&lt;/div&gt;</code></pre>
+      <div class="flex-row">
+        <div class="flex-column text-center">Small - 800px</div>
+        <div class="flex-column text-center">Medium - 1000px</div>
+        <div class="flex-column text-center">Large - 1200px</div>
       </div>
+    </div>
+  </section>
+
+  <!--  Grid -->
+  <section id="grid" class="content">
+    <div class="small-container">
+				<h2>Grid</h2>
+				<p>The grid is based on percents - <code>small-50</code> or <code>large-50</code> is 50% of the screen width. The two breakpoints are defined by <code>small</code> or <code>large</code> classes. Resize the screen to see the different breakpoints.</p>
+				<pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;small-50&quot;&gt;50%&lt;/div&gt;
+  &lt;div class=&quot;small-50&quot;&gt;50%&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;large-50&quot;&gt;50%&lt;/div&gt;
+  &lt;div class=&quot;large-50&quot;&gt;50%&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <div class="row">
+        <div class="small-50 example">
+          small-50
+        </div>
+        <div class="small-50 example">
+          small-50
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-50 example">
+          large-50
+        </div>
+        <div class="large-50 example">
+          large-50
+        </div>
+      </div>
+
+      <h3>Flex Grid</h3>
+  		<p>Create infinitely repeating cells with a flex grid.</p>
+  		<pre><code class="language-html">  &lt;div class=&quot;flex-row&quot;&gt;
+  	&lt;div class=&quot;flex-column&quot;&gt;&lt;/div&gt;
+  	&lt;div class=&quot;flex-column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-row&quot;&gt;
+  	&lt;div class=&quot;flex-column&quot;&gt;&lt;/div&gt;
+  	&lt;div class=&quot;flex-column&quot;&gt;&lt;/div&gt;
+  	&lt;div class=&quot;flex-column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  		<div class="flex-row">
+  				<div class="flex-column example">2</div>
+  				<div class="flex-column example">2</div>
+  		</div>
+  		<div class="flex-row">
+  				<div class="flex-column example">3</div>
+  				<div class="flex-column example">3</div>
+  			  <div class="flex-column example">3</div>
+  		</div>
+    </div>
+  </section>
+
+  <!-- Typography -->
+  <section id="typography" class="content">
+    <div class="small-container">
+      <h2>Typography</h2>
+			<p>The font size is set to <code>1rem</code> on the <code>html</code> element, so all font sizing will cascade from the root. By using em, it cascades from 1rem.</p>
+			<p>Headings all have the same line-height and margins, and only the font size is individually defined.</p>
+			<h1 style="margin: 1rem 0;">Heading 1</h1>
+			<h2 style="margin: 1rem 0;">Heading 2</h2>
+			<h3 style="color:#404040;margin: 1rem 0;">Heading 3</h3>
+			<h4 style="margin: 1rem 0;">Heading 4</h4>
+			<h5 style="margin: 1rem 0;">Heading 5</h5>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section id="buttons" class="content">
+    <div class="small-container">
+      <h2>Buttons</h2>
+			<p>Button elements, links with a <code>button</code> class as opposed to using the <code>&lt;button&gt;</code> tag only, and input elements should all render exactly the same.</p>
+      <p>If you want to change the color and padding etc, simply just go to the <strong>_buttons.scss</strong> file and tweak the variables.</p>
+			<pre><code class="language-html">&lt;button&gt;Button&lt;/button&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;a class=&quot;button&quot;&gt;Link&lt;/a&gt;</code></pre>
+			<button>Button</button>
+			<input type="submit" value="Submit">
+			<input type="button" value="Input">
+			<a class="button">Link</a>
     </div>
   </section>
 
