@@ -191,6 +191,57 @@
     </div>
   </section>
 
+  <!-- Helpers -->
+  <section id="helpers" class="content">
+    <div class="small-container">
+      <h2>Helpers</h2>
+      <p>With these classes, you can easily center things or create sections faster.</p>
+      <h3>Vertical Center</h3>
+			<p>Vertically center an element with the <code>vertical-center</code> class. (Uses <a href="http://caniuse.com/#search=flexbox" target="_blank">Flexbox</a>.)</p>
+			<pre><code class="language-html">&lt;div class="vertical-center"&gt;
+  &lt;div&gt;Vertically centered&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<div class="vertical-center example" style="height: 100px;">
+				<div class="example">Vertically centered</div>
+			</div>
+        <!-- text alignment -->
+        <h3>Text Alignment</h3>
+    		<p>Use <code>text-left</code>, <code>text-right</code>, and <code>text-center</code> to align content.</p>
+    		<pre><code class="language-html">&lt;p class=&quot;text-left&quot;&gt;Left&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Center&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;Right&lt;/p&gt;</code></pre>
+    		<p class="text-left"><span class="example">Left</span></p>
+    		<p class="text-center"><span class="example">Center</span></p>
+    		<p class="text-right"><span class="example">Right</span></p>
+        <!-- Responsive image -->
+        <h3>Responsive Images</h3>
+    		<p>Add a <code>responsive-image</code> class for responsive images.</p>
+    		<pre><code class="language-html">&lt;img src="#" class="responsive-image" alt="Responsive Image"&gt;</code></pre>
+    		<img src="https://placehold.it/800x100" class="responsive-image" alt="Example of responsive-image CSS class">
+    </div>
+  </section>
+
+  <!-- Instructions -->
+  <section id="HowTo" class="content">
+    <div class="small-container">
+      <h2>How to Use</h2>
+  		<p>This project is built with Sass (SCSS) and Gulp. Below is how I learned how to use the basics of each.</p>
+  		<ul>
+  			<li><a href="http://sass-lang.com/guide" target="_blank">Learn to use Sass</a></li>
+  			<li><a href="https://www.taniarascia.com/getting-started-with-gulp/" targer="_blank">Learn to use Gulp</a></li>
+  		</ul>
+  		<p>Sass is used to extend your CSS, allowing you to use useful concepts like variables and nesting, as well as compartmentalizing and organizing the code. Gulp is used to watch for changes and process those Sass files into regular CSS files, as well as minifying and adding prefixes for cross-browser compatibilty.</p>
+  		<p>Using <a href="https://nodejs.org/en/">Node</a> is the easiest way to get started. If you already have Node installed, you can just clone the project...</p>
+  		<pre><code>git clone https://github.com/CodingGabe/sombra.git</code></pre>
+  		<p>install the dev dependencies in the root of the project...</p>
+  		<pre><code>npm install</code></pre>
+  		<p>and run.</p>
+  		<pre><code>gulp</code></pre>
+  		<p>The default <code>gulp</code> command will run a watch to compile, minify and prefix your files.</p>
+      <p>Once you get everything installed, simply start making changes to the variables to customize and begin creating!</p>
+    </div>
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <!-- GitHub buttons script -->
