@@ -35,7 +35,13 @@
     padding: 10px;
   }
 }
-
+.content-alt {
+  background-color: #4A4E69;
+  color: #fff;
+}
+.content-alt h2 {
+  color: #fff;
+}
 .doc-section {
     margin-top: 50px;
 }
@@ -48,11 +54,11 @@
 .flex-container {
   display: flex;
 }
-
-.content {
-  width: 100%;
-}
 .example {
   border: 1px solid #4A4E69;
+  padding: 10px;
+}
+.example-alt {
+  border: 1px solid #fff;
   padding: 10px;
 }
